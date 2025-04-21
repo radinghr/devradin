@@ -1,0 +1,46 @@
+{
+  "navigation": {
+    "me": "Me",
+    "experience": "Experience",
+    "skills": "Skills",
+    "contact": "Contact",
+    "footer-rights": "All rights reserved"
+  },
+  "hero": {
+    "title": "Hi, I'm Radin",
+    "jobTitle": "Software/Data Engineer",
+    "description": "Senior Software Engineer with a strong background in backend development,\n cloud solutions, and data engineering.\n I help businesses scale, innovate, and achieve their goals through technology.\n Passionate about mentoring and leading teams toward success.\n Currently based in Berlin, working at BAUHAUS."
+  },
+  "experiences": {
+    "title": "Experiences",
+    "items": [
+      {
+        "subtitle": "Experienced Data/Software Engineer",
+        "description": "BAUHAUS is one of the biggest E-Commerce companies in the Europe. I worked in the Pricing team, where I was responsible for the pricing of the products."
+      },
+      {
+        "subtitle": "Software Engineer",
+        "description": "momox is one of the leading Re-commerce companies in the Europe. I worked in the Pricing/Marketing team. I was responsible for the pricing of the products and also managing the Google Ads campaigns."
+      },
+      {
+        "subtitle": "Senior Software/Data Engineer",
+        "description": "Sheypoor is one of the lead classifieds marketplaces in Iran with over 20M users. I worked in the Data team where I was responsible for the data pipelines and also the data warehouse."
+      },
+      {
+        "subtitle": "Senior Software Engineer",
+        "description": "I worked in the ParsData Company's fintech startup called Diver. I was responsible for the entire designation and implementation of the Backend system."
+      },
+      {
+        "subtitle": "Software Engineer",
+        "description": "Parspooyesh Fanavar is a Telecom company. They offer accounting systems to internet providers. They have more than 10 million network clients and subscribers. I worked in the IT department of the company and was responsible for different projects and dashboards."
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills & Expertise"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "description": "I'm always interested in hearing about new projects and opportunities.\n Whether you have a question or just want to say hi, feel free to reach out!"
+  }
+}

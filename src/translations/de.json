@@ -1,0 +1,46 @@
+{
+  "navigation": {
+    "me": "Ich",
+    "experience": "Berufserfahrung",
+    "skills": "Kenntnisse",
+    "contact": "Kontakt",
+    "footer-rights": "Alle Rechte vorbehalten"
+  },
+  "hero": {
+    "title": "Hallo, ich bin Radin",
+    "jobTitle": "Software-/Daten-Ingenieur",
+    "description": "Senior Software Engineer mit fundierten Kenntnissen in den Bereichen Backend-Entwicklung,\nCloud-Lösungen und Data Engineering.\nIch helfe Unternehmen bei der Skalierung, Innovation und dem Erreichen ihrer Ziele durch Technologie.\nIch bin leidenschaftlicher Mentor und führe Teams zum Erfolg.\nDerzeit in Berlin ansässig und bei BAUHAUS tätig."
+  },
+  "experiences": {
+    "title": "Berufserfahrung",
+    "items": [
+      {
+        "subtitle": "Erfahrener Daten-/Softwareentwickler",
+        "description": "BAUHAUS ist eines der größten E-Commerce-Unternehmen in Europa. Ich habe im Pricing-Team gearbeitet, wo ich für die Preisgestaltung der Produkte verantwortlich war."
+      },
+      {
+        "subtitle": "Softwareentwickler",
+        "description": "momox ist eines der führenden Re-Commerce-Unternehmen in Europa. Ich habe im Team Preisgestaltung/Marketing gearbeitet. Ich war für die Preisgestaltung der Produkte und die Verwaltung der Google Ads-Kampagnen verantwortlich."
+      },
+      {
+        "subtitle": "Senior Daten-/Softwareentwickler",
+        "description": "Sheypoor ist einer der führenden Kleinanzeigenmarktplätze im Iran mit über 20 Millionen Nutzern. Ich habe im Datenteam gearbeitet, wo ich für die Datenpipelines und das Data Warehouse verantwortlich war."
+      },
+      {
+        "subtitle": "Senior Softwareentwickler",
+        "description": "Ich arbeitete im Fintech-Startup Diver der ParsData Company. Ich war für die gesamte Konzeption und Implementierung des Backend-Systems verantwortlich."
+      },
+      {
+        "subtitle": "Softwareentwickler",
+        "description": "Parspooyesh Fanavar ist ein Telekommunikationsunternehmen. Sie bieten Internetanbietern Abrechnungssysteme an. Das Unternehmen hat mehr als 10 Millionen Netzwerkkunden und -teilnehmer. Ich habe in der IT-Abteilung des Unternehmens gearbeitet und war für verschiedene Projekte und Dashboards zuständig."
+      }
+    ]
+  },
+  "skills": {
+    "title": "Fertigkeiten und Fachwissen"
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "description": "Ich bin immer daran interessiert, von neuen Projekten und Möglichkeiten zu hören.\nEgal, ob Sie eine Frage haben oder einfach nur hallo sagen wollen, wenden Sie sich an mich!"
+  }
+}

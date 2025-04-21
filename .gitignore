@@ -1,0 +1,7 @@
+.idea/*
+*/.idea*
+
+dist/
+build/
+node_modules/
+.yarn

@@ -27,9 +27,9 @@ export const theme = {
     heading: "'Poppins', sans-serif",
   },
   breakpoints: {
-    sm: '640px',
-    md: '768px',
-    lg: '1024px',
+    sm: '900px',
+    md: '1048px',
+    lg: '1200px',
     xl: '1280px',
   },
   spacing: {

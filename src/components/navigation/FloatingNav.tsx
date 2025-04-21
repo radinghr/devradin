@@ -5,14 +5,14 @@ import { useEffect, useState } from 'react';
 
 const NavContainer = styled(motion.nav)`
   position: fixed;
-  right: ${theme.spacing.xl};
+  right: ${theme.spacing.md};
   top: 50%;
   transform: translateY(-50%);
   z-index: 1000;
   background: ${theme.colors.glass.background}80;
   backdrop-filter: blur(10px);
-  padding: ${theme.spacing.lg};
-  border-radius: 50px;
+  padding: ${theme.spacing.md};
+  border-radius: 25px;
   display: flex;
   flex-direction: column;
   gap: ${theme.spacing.md};
@@ -38,8 +38,8 @@ const NavContainer = styled(motion.nav)`
 `;
 
 const NavDot = styled(motion.button)<{ active: boolean }>`
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background: ${props => props.active ? theme.colors.accent : 'rgba(255, 255, 255, 0.3)'};
   border: 2px solid ${props => props.active ? theme.colors.accent : 'rgba(255, 255, 255, 0.5)'};
@@ -49,8 +49,8 @@ const NavDot = styled(motion.button)<{ active: boolean }>`
   transition: all ${theme.transitions.default};
 
   @media (max-width: ${theme.breakpoints.sm}) {
-    width: 14px;
-    height: 14px;
+    width: 7px;
+    height: 7px;
   }
 
   &:hover {

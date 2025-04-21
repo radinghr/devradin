@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import {motion} from 'framer-motion';
-import {ReactNode, useEffect} from 'react';
+import {ReactNode, useEffect, useState} from 'react';
 import {theme} from '@/styles/theme.ts';
 import {FloatingNav} from '../navigation/FloatingNav';
 import {useKeyboardNavigation} from '@/hooks/useKeyboardNavigation.ts';
@@ -91,8 +91,13 @@ const Nav = styled.nav`
         max-width: 1200px;
         margin: 0 auto;
         width: 90%;
+
+        @media (max-width: ${theme.breakpoints.sm}) {
+            padding: 0 ${theme.spacing.sm};
+        }
     }
 `;
+
 
 const LogoWrapper = styled.div`
     display: flex;
@@ -105,6 +110,10 @@ const Logo = styled(motion.div)`
     font-family: ${theme.fonts.heading};
     font-size: 1.5rem;
     font-weight: 700;
+
+    @media (max-width: ${theme.breakpoints.sm}) {
+        font-size: 1.2rem;
+    }
 `;
 
 const LogoImage = styled.img`
@@ -118,7 +127,7 @@ const LogoImage = styled.img`
     }
 `;
 
-const NavLinks = styled.div`
+const NavLinks = styled.div<{ open: boolean }>`
     display: flex;
     gap: ${theme.spacing.lg};
 
@@ -136,13 +145,48 @@ const NavLinks = styled.div`
     }
 
     @media (max-width: ${theme.breakpoints.sm}) {
-        gap: ${theme.spacing.md};
+        flex-direction: column;
+        align-items: center;
+        gap: ${theme.spacing.sm};
+        position: absolute;
+        top: 50px;
+        right: ${theme.spacing.sm};
+        background: ${theme.colors.glass.background};
+        backdrop-filter: blur(8px);
+        padding: ${theme.spacing.md};
+        border-radius: 8px;
+        display: ${({ open }) => (open ? 'flex' : 'none')};
     }
 `;
 
+const HamburgerButton = styled.button`
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+
+    span {
+        width: 25px;
+        height: 3px;
+        background: ${theme.colors.light};
+        margin: 4px 0;
+        transition: all 0.3s ease;
+    }
+
+    @media (max-width: ${theme.breakpoints.sm}) {
+        display: flex;
+    }
+`;
+
+
+
 const Main = styled.main`
     flex: 1;
-    margin-top: 4.5rem;
+    margin-top: 5.5rem;
     width: 100%;
     overflow-x: hidden;
 `;
@@ -184,6 +228,7 @@ const Footer = styled.footer`
 export const Layout = ({children}: LayoutProps) => {
     const { t } = useTranslation();
     useKeyboardNavigation();
+    const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
         // Add keyboard navigation instructions to console
@@ -220,7 +265,13 @@ export const Layout = ({children}: LayoutProps) => {
                                     DevRadin
                                 </Logo>
                             </LogoWrapper>
-                            <NavLinks role="list">
+                            <HamburgerButton onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle navigation">
+                                <span />
+                                <span />
+                                <span />
+                            </HamburgerButton>
+
+                            <NavLinks open={menuOpen} role="list">
                                 <a href="#hero" role="listitem" aria-label="me">{t('navigation.me')}</a>
                                 <a href="#experiences" role="listitem" aria-label="Experience section">{t('navigation.experience')}</a>
                                 <a href="#skills" role="listitem" aria-label="Skills section">{t('navigation.skills')}</a>

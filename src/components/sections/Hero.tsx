@@ -164,7 +164,7 @@ export const Hero = () => {
                 <span className="sr-only">LinkedIn</span>
               </a>
               <a 
-                href="mailto:radiingh@gmail.com"
+                href="mailto:info@devradin.com"
                 aria-label="Send me an email"
                 role="listitem"
               >

@@ -206,14 +206,14 @@ const Contact = () => {
               {t('contact.description')}
             </ContactText>
             <ContactEmail 
-              href="mailto:radiingh@gmail.com"
+              href="mailto:info@devradin.com"
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              aria-label="Send me an email at radiingh@gmail.com"
+              aria-label="Send me an email at info@devradin.com"
             >
               <FaEnvelope aria-hidden="true" />
-              <span>radiingh@gmail.com</span>
+              <span>info@devradin.com</span>
             </ContactEmail>
             <SocialLinks 
               variants={itemVariants}
